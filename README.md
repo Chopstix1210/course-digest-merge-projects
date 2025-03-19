@@ -16,5 +16,5 @@ This project is meant for merging multiple projects into a single project. Pleas
 5. Make a folder in the `./course-digest-merge-projects` directory that contains the unzipped projects 
 6. Run `python merge.py -f [path/to/directory/with/unzipped/projects]`
 7. Follow the prompts 
-8. The output project should be in `./course-digest-merge-projects`
+8. The output project should be in `./course-digest-merge-projects/output`
 9. Ingest the project to which ever server you like (i.e. Proton or Tokamak) using V2 ingest 
