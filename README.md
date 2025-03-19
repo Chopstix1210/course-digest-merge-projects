@@ -1,25 +1,20 @@
 # Course Digest
 
-This tool takes as input a full course package source tree and generates a histogram of XML element usage, bucketed by resource type and version, captured in a single `histogram.csv` output file.
+This project is meant for merging multiple projects into a single project. Please ensure you have the following installed to run the `merge.py` script. 
 
-## Running from source
+- Node.js (v22.9.0)
+- Python (>=3.11)
+- npm (v10.8.3)
+- Unix based system (MacOS or Linux)
 
-Running form source requires having node version 10+, yarn, and git command line installed.
 
-To generate a full course package digest using this tool from source:
-
-```
-git clone <this repository>
-yarn install
-npm start -- --operation convert --inputDir <course input dir>
-```
-
-Optionally, you can specify a specific output directory. Defaults to `<inputDir>-out`
-```
-npm start -- --operation convert --inputDir <course input dir> --outputDir ./out
-```
-
-Before uploading media assets, you will need to configure AWS credentials and a bucket name.
-See detailed instructions in the [Wiki](https://github.com/Simon-Initiative/course-digest/wiki).
-
-The tool can also be used to [convert questions exported in QTI format](https://github.com/Simon-Initiative/course-digest/wiki/QTI-Conversion-mode).
+## How to the use the script 
+1. Clone this repo using `git clone` 
+2. `cd` into the directory `cd ./course-digest-merge-projects`
+3. Go to [app.argos.education](https://app.argos.education)
+4. Download all the projects that is associated with the product you would like to use 
+5. Make a folder in the `./course-digest-merge-projects` directory that contains the unzipped projects 
+6. Run `python merge.py -f [path/to/directory/with/unzipped/projects]`
+7. Follow the prompts 
+8. The output project should be in `./course-digest-merge-projects`
+9. Ingest the project to which ever server you like (i.e. Proton or Tokamak) using V2 ingest 
