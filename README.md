@@ -7,6 +7,8 @@ This project is meant for merging multiple projects into a single project. Pleas
 - npm (v10.8.3)
 - Unix based system (MacOS or Linux)
 
+  **Note: Need to also install ts-node** `npm install --save-dev ts-node`
+
 
 ## How to the use the script 
 1. Clone this repo using `git clone` 
