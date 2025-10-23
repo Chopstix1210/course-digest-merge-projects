@@ -10,13 +10,11 @@ Please ensure you have the following installed to run the `merge.py` script:
 - npm (v10.8.3)
 - Unix based system (MacOS or Linux)
 
-<<<<<<< HEAD
 ## Installation
 To install required dependencies:
 =======
   **Note: Need to also install ts-node** `npm install --save-dev ts-node`
 
->>>>>>> 1a5f825ce8afd3d24fba2d395b5145912c83d264
 
 ```bash
 # Install Python dependencies
@@ -33,12 +31,8 @@ npm install
 4. Download all the projects that are associated with the product you would like to use
 5. Make a folder in the `./course-digest-merge-projects` directory that contains the unzipped projects
 6. Run `python merge.py -f [path/to/directory/with/unzipped/projects]`
-<<<<<<< HEAD
 7. Follow the prompts
 8. The output project should be in `./course-digest-merge-projects`
 9. Ingest the project to whichever server you like (i.e. Proton or Tokamak) using V2 ingest
-=======
-7. Follow the prompts 
-8. The output project should be in `./course-digest-merge-projects/output`
-9. Ingest the project to which ever server you like (i.e. Proton or Tokamak) using V2 ingest 
->>>>>>> 1a5f825ce8afd3d24fba2d395b5145912c83d264
+
+
